@@ -1,0 +1,188 @@
+.about-content{
+    background-color: var( --dev-b-bg-light);
+    .about-content__right{
+        margin-top: 50px;
+    }
+    .about-content-two{
+        .item{
+            a{
+               font-size: 20px;
+               font-weight: 600;
+               line-height: 32px;
+               color: $primary-color;
+               &:hover{
+                color: $secondary-color;
+               } 
+            }
+        }
+    }
+   
+}
+.skill-content{
+    background-color: var(--dev-b-bg-grey);
+    .skill-image{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 30px;
+    }
+    .skill-bars{
+        .b-progress-info{
+            margin-bottom: 25px;
+        }
+        .b-progress-tittle{
+            font-size: 18px;
+            color: var(--dev-b-color-text);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .b-progress{
+            height: 0.5em;
+            overflow: hidden;
+            font-size: 0.75em;
+            background-color: $about-cl-13;
+            border-radius: 0.25em;
+            display: flex;
+            
+            .b-progress-bar{
+                width: 80%;
+                background-color: $primary-color;
+                
+            }
+        }
+    }
+}
+.about-team{
+    background-color: var( --dev-b-bg-light);
+    .team-item{
+        .team-image{
+            position: relative;
+            .team-overplay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 1;
+                .menu-socials{
+                    opacity: 0;
+                    position: absolute;
+                    bottom: 15%;
+                    left: 0;
+                    right: 0;
+                    transition: all .4s ease-in-out;
+                    a{
+                        span{
+                            display: inline-block;
+                            line-height: 42px;
+                            text-align: center;
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            transition: all .3s ease 0s;
+                            background: rgba(157, 157, 157, 0.5);
+                            color: #fff;
+                        }
+                        &:hover span{
+                            color: $primary-color;
+                            background-color: #fff;
+                        }
+                        
+                    }
+                }
+            }
+            &:hover .menu-socials{
+                opacity: 1;
+            }
+        }
+        .team-title{
+            margin: 25px 0 0px;
+            font-size: 24px;
+            color: var(--dev-b-color-text-a);
+            font-weight: 700;
+            display: block;
+            transition: all .3s ease 0s;
+          
+        }
+        &:hover .team-title{
+            color: $primary-color;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .b-header-title .b-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .mt-mb-md-5{
+        margin-top: 3rem;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .b-header-title {
+        .b-title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .b-title-sub{
+            font-size: 16px;
+        }
+    }
+    .mt-mb-sm-5{
+        margin-top: 3rem;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .b-header-title {
+        .b-title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .b-title-sub{
+            font-size: 16px;
+        }
+    }
+    .mt-mb-xs-5{
+        margin-top: 3rem;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+//Service color
+$primary-color: #ff6600;
+$secondary-color: #ffc600;
+$services-cl-1: #c2d0da;
+$services-cl-2: #232220;
+$services-cl-3: #eee;
+$services-cl-4:rgba(255, 255, 255, 0.2);
+$services-cl-5:rgba(255, 255, 255, 0.1);
+$services-cl-6:#fff;
+$services-cl-7: #121725;
+$services-cl-8: grayscale(100%);
+$services-cl-9: #282828;
+$services-cl-10: #282828;
+$services-cl-11: #888c96;
+$services-cl-12: #000;
+$services-cl-13: rgba(22, 28, 45, 0.7);
+$services-cl-14: rgba(130, 115, 252, .05);
+$services-cl-15: #232121;
+
+$about-cl-13: rgba(22, 28, 45, 0.7);
+$about-cl-15: #232121;
+$about-cl-16: #f7f7f7;
+$about-cl-17: #232121;
+
+$blog-cl-16: #f7f7f7;
+$blog-cl-13: rgba(22, 28, 45, 0.7);
+//breakpoints
+$b-breakpoints:(
+    'extra-lg': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+
+);
+
