@@ -1,0 +1,155 @@
+@import "./Layouts/header_2";
+@import "./Layouts/header_1";
+@import "./Layouts/footer";
+@import "./Themes/mixins";
+
+body,
+html {
+  color: $fontGrey;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: $headerColor;
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: $fontGrey;
+  font-family: "Quicksand", sans-serif;
+}
+
+.title-subhny {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: $fontColor;
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+
+.title-w1 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.twice-two {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.map-content-9 form input,
+.map-content-9 form textarea {
+  background: $backgroundGrey;
+  border: 1px solid transparent;
+  color: $fontColor;
+  font-size: 18px;
+  padding: 12px 20px;
+  line-height: 28px;
+  width: 100%;
+  border-radius: $borderRadius;
+  height: 58px;
+}
+
+.map-content-9 {
+  form textarea {
+    resize: none;
+    min-height: 200px;
+  }
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $fontColor;
+  border: 2px solid $fontColor;
+  opacity: 0.8;
+}
+
+.contact {
+  background-color: $backgroundColor;
+}
+
+.contact-view {
+  grid-template-columns: 1fr 2.5fr;
+  grid-gap: 20px;
+}
+
+.d-grid {
+  display: grid;
+}
+.cont-top {
+  display: grid;
+  grid-template-columns: 20px auto;
+  grid-column-gap: 20px;
+}
+
+.cont-left {
+  span.fa {
+    font-size: 20px;
+    margin-top: 5px;
+    color: $fontColor;
+  }
+}
+
+.cont-details {
+  h5 {
+    font-size: 20px;
+    color: $headerColor;
+    font-weight: 600;
+  }
+
+  p,
+  a {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--font-color);
+  }
+  p{
+    a{
+        font-size: 18px;
+    line-height: 28px;
+    color: $fontGrey;
+    }
+  }
+}
+
+

@@ -1,0 +1,82 @@
+@import "./Layouts/header_2";
+@import "./Layouts/header_1";
+@import "./Layouts/footer";
+@import "./Themes/mixins";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: $backgroundColor;
+  color: $fontGrey;
+  font-family: "Quicksand", sans-serif;
+}
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: $headerColor;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.error {
+  background-color: #232220;
+  .container {
+    h1 {
+      color: white;
+      font-size: 130px;
+      font-weight: 900;
+    }
+    .form-inline.search-form {
+      position: relative;
+      max-width: 500px;
+      margin: auto;
+    }
+    button.btn.search {
+      color: #fff;
+      background: $fontColor;
+      font-size: 18px;
+      padding: 0 40px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 55px;
+      display: inline-block;
+      border-radius: $borderRadius;
+    }
+    .form-control {
+      color: $fontGrey;
+      padding: 12px 120px 12px 25px;
+      font-size: 18px;
+      line-height: 28px;
+      height: 55px;
+      background: $backgroundGrey;
+      border-radius: $borderRadius;
+      display: block;
+      font-weight: 500;
+    }
+  }
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
