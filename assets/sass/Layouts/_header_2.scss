@@ -1,5 +1,6 @@
 @import "../Themes/variables";
 @import "../Themes/mixins";
+@import "../Layouts/menu_mobile";
 
 h1,
 h2,
@@ -25,6 +26,7 @@ h3 {
   font-weight: 600;
 }
 
+
 .header {
   // background-color: $fontColor;
   background-image: linear-gradient(to right, #ff6600, #050300a7),
@@ -34,6 +36,7 @@ h3 {
   background-position: initial;
   background-attachment: fixed;
   min-height: 700px;
+
   .infor{
     max-width: 600px;
     text-align: left;
@@ -237,4 +240,5 @@ h3 {
     }
   }
 }
+
 

@@ -1,3 +1,69 @@
+.b-overlay-scale {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.2s;
+  visibility: hidden;
+}
+
+.b-open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.b-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+  background: rgba(6, 3, 0, 0.8);
+}
+
+.b-overlay button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  overflow: hidden;
+  border: none;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.b-overlay nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.b-overlay nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.b-overlay nav ul li {
+  min-height: 40px;
+  line-height: 3em;
+}
+
+.b-overlay nav ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.b-overlay nav ul li a:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,

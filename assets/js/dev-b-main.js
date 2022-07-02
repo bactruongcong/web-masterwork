@@ -1,3 +1,7 @@
+$("#trigger-overlay").on("click", function (e) {
+    e.preventDefault();
+    $(".b-overlay-scale").addClass("b-open");
+  });
 $(".trigger-overplay").on("click", function (e) {
     e.preventDefault();
     $(".b-overlay-scale").addClass("b-open");
