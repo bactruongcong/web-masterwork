@@ -1,0 +1,297 @@
+.blog-post{
+    background-color: var( --dev-b-bg-grey);
+    .card{
+        border: none;
+        background-color: var( --dev-b-bg-grey);
+    }
+    .b-card-header{
+        position: relative;
+        .b-card-post-pos{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            a.reciepe{
+                background-color: $primary-color;
+                color: #fff;
+                padding: 3px 20px;
+                border-radius: 35px;
+                font-weight: 700;
+                font-size: 12px;
+                margin-bottom: 5px;
+                display: inline-block;
+                letter-spacing: .05em;
+                
+            }
+            .post-pos-info{
+                color: #fff;
+                font-size: 15px;
+                margin-left: 10px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+    .card-body{
+        padding: 0;
+        .blog-desc{
+            display: block;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 600;
+            color: var(--dev-b-color-heading);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            transition: .3s ease;
+        }
+    }
+    .card-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        border: none;
+        background:none;
+        .card-footer__info{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            a{
+                color: var(--dev-b-color-text-a);
+                font-weight: 700;
+            }
+            .post-img-anchor{
+                img{
+                    object-fit: cover;
+                    object-position: center;
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+        a.read{
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: var(--dev-b-color-text-a);
+            opacity: 0.9;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        
+    }
+    .latest-recipes{
+        .post-recipe{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+    .sidebar-widget{
+        margin-bottom: 40px;
+        padding: 40px 30px;
+        background-color: var(--dev-b-bg-color-1);
+        border-radius: 6px;
+        .latest-recipes-header__title{
+            font-size: 26px;
+            line-height: 38px;
+            font-weight: 600;
+        }
+        .text-small{
+            a{
+                display: block;
+                font-size: 17px;
+                line-height: 22px;
+                font-weight: 700;
+                color: var(--dev-b-color-text-a);
+                margin-top: 10px;
+            }
+        }
+        
+    }
+    .blog-right{
+        .trending-post{
+            .post-content{
+                a{
+                    font-size: 20px;
+                    line-height: 28px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+                    color: var(--dev-b-color-text-a);
+                    transition: 0.3s ease;
+                }
+            }
+        }
+        .categories{
+            .blog-cat{
+                li{
+                    a{
+                        position: relative;
+                        color: var(--dev-b-color-text-a);
+                        font-size: 19px;
+                        font-weight: 600;
+                        display: inline-block;
+                        padding: 10px 15px 10px 20px;
+                        transition: 0.3s ease;
+                        &::before{
+                            display: inline-block;
+                            color: $primary-color;
+                            content: "";
+                            width: 8px;
+                            height: 8px;
+                            background-color: var(--dev-b-color-text-a);
+                            position: absolute;
+                            top: 20px;
+                            left: 0px;
+                            border: 1px solid #232121;
+                            opacity: .3;
+                        }
+                        &:hover {
+                            color: $primary-color;
+                        }
+                        &:hover::before{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagination-wrapper{
+       
+        .page-pagination{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+         
+            .next{
+                display: block;
+                background-color: var(--dev-b-bg-grey);
+                border-radius: 6px;
+                padding: 8px 16px;
+                font-weight: 700;
+                border: 1px solid var(--border-color-light);
+                color: $blog-cl-13;
+                transition: background-color .15s linear, color .15s linear;
+                &:hover{
+                    background-color: var(--dev-b-bg-light);
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+                }
+            }
+            .page-numbers{
+                display: block;
+                background-color: var(--dev-b-bg-grey);
+                border-radius: 6px;
+                padding: 8px 16px;
+                font-weight: 700;
+                border: 1px solid var(--border-color-light);
+                text-align: center;
+                color: $blog-cl-13;
+                transition: background-color .15s linear, color .15s linear;
+                &:hover{
+                    background-color:  var(--dev-b-bg-light);
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+                }
+            }
+            .page-numbers.current{
+                background-color: $primary-color;
+                color: #fff;
+            }
+            
+        }
+    }
+}
+@media (max-width: 991px){
+    .blog-post{
+      .card-body{
+        .blog-desc{
+            font-size: 20px;
+            line-height: 30px;
+        }
+      }
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .b-header-title .b-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .mt-mb-md-5{
+        margin-top: 3rem;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .b-header-title {
+        .b-title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .b-title-sub{
+            font-size: 16px;
+        }
+    }
+    .mt-mb-sm-5{
+        margin-top: 3rem;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .b-header-title {
+        .b-title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .b-title-sub{
+            font-size: 16px;
+        }
+    }
+    .mt-mb-xs-5{
+        margin-top: 3rem;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}

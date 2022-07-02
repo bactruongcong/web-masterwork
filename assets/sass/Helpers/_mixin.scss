@@ -1,0 +1,12 @@
+@mixin b-reponsive($screen1){
+    @if(map-has-key($map: $b-breakpoints, $key: $screen1)){
+        $value: map-get($map: $b-breakpoints, $key: $screen1);
+        @media only screen and (min-width: $value){
+            @content;
+        }
+
+    }
+    @else{
+        @warn "`{$screen}` isn't in breakpoint";
+    }
+}

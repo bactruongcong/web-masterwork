@@ -1,0 +1,245 @@
+.services-content{
+    background-color: var( --dev-b-bg-light);
+}
+.services-feature{
+    background-color: var( --dev-b-bg-light);
+    .services-feature-item{
+        padding: 40px 40px;
+        border-radius: 8px;
+        transition: all 0.5s ease 0s;
+        border: 1px solid var(--border-color-light);
+        background-color: var( --dev-b-bg-light);
+     
+        &:hover{
+            box-shadow: 0 25px 98px 0 rgba(0,0,0,0.1);
+        }
+        .box-wrap-flex{
+            display: flex;
+            .icon{
+                margin-right: 30px;
+                width: 70px;
+                height: 70px;
+                text-align: center;
+                transition: all 0.5s ease 0s;
+                background: $services-cl-14;
+                border-radius: 6px;
+                .fa{
+                    font-size: 25px;
+                    transition: 0.3s ease-in-out;
+                    color: $primary-color;
+                    line-height: 70px;
+                }
+            }
+            .info{
+                h4{
+                    a{
+                       font-size: 24px;
+                       font-weight: 600;
+                       margin-top: 5px;
+                       color: var(--dev-b-color-text-a);
+                       display: block;
+                       &:hover{
+                        color: $primary-color;
+                       }
+                    }
+
+                }
+            }
+        }
+        &:hover .icon{
+            background-color: $primary-color;
+            .fa{
+                color: $services-cl-6;
+            }
+        }
+    }
+
+}
+.services-middle{
+    background-image:url("../image/banner2.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        top: 0;
+        content: "";
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background: rgba($color: #000000, $alpha: 0.6);
+    }
+    .services-middle__welcome{
+        max-width: 700px;  
+        margin: 0 auto;
+        h3{
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: 600;
+            color: #fff;
+            max-width: 800px;
+        }
+        .middle-welcome-button{
+            .btn-white:hover{
+                background-color: #fff;
+                color: $primary-color;
+            }
+            
+        }
+    }
+}
+.services-pricing{
+    background-color: var( --dev-b-bg-light);
+    .services-menu-item{
+        .menu-item-name{
+            h6{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        .menu-item-price{
+            h6{
+                font-weight: 600;
+                font-size: 1.3em;
+                color: $primary-color;
+            }
+        }
+        .item-des p{
+            margin-top: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 991px){
+    .blog-post{
+      .card-body{
+        .blog-desc{
+            font-size: 20px;
+            line-height: 30px;
+        }
+      }
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .b-header-title .b-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .mt-mb-md-5{
+        margin-top: 3rem !important;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .b-header-title {
+        .b-title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .b-title-sub{
+            font-size: 16px;
+        }
+    }
+    .mt-mb-sm-5{
+        margin-top: 3rem !important;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+  
+}
+@media (max-width: 736px) {
+    .b-banner{
+        min-height: 200px;
+        .b-breadcrumb__custom-path{
+            padding-top: 20px;
+        }
+        .b-overlay{
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-bar{
+        span{
+            font-size: 14px;
+        }
+        .demo-btns{
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+    .pull-right-move{
+        width: 40px;
+        span{
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 650px){
+    .b-header__menu-right-content{
+        .b-search-bar{
+            display: none;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .b-header-title {
+        .b-title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .b-title-sub{
+            font-size: 16px;
+        }
+    }
+    .mt-mb-xs-5{
+        margin-top: 3rem !important;
+    }
+    .b-footer{
+        .menu-socials{
+            text-align: center;
+        }
+    }
+    .services-copyright{
+        text-align: center;
+        .b-footer-list{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}
