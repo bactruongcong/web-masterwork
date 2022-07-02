@@ -354,6 +354,7 @@ p {
   top: 15px;
   font-size: 15px;
   cursor: pointer;
+  color: var(--dev-b-color-heading);
 }
 
 .b-banner .b-header .b-header__menu-right-content .trigger-overplay {
