@@ -1,5 +1,6 @@
 @import "./Layouts/header_2";
 @import "./Layouts/header_1";
+@import "./Layouts/menu_right";
 @import "./Layouts/footer";
 @import "./Themes/mixins";
 
@@ -8,7 +9,7 @@ html {
   margin: 0;
   padding: 0;
   background: $backgroundColor;
-  color: $fontGrey;
+  color: $fontGrey; 
   font-family: "Quicksand", sans-serif;
 }
 * {
